@@ -47,7 +47,7 @@ void __attribute__ ((weak)) outbyte(int c)
 	UART[0]=c;
 }
 
-static const int mhz=64;
+//static const int mhz=64;
 
 void __attribute__ ((weak)) _initIO(void)  
 {
@@ -58,7 +58,7 @@ void __attribute__ ((weak)) _initIO(void)
 			/* Phi board addresses */
 			UART=(volatile int *)0x080a000c;
 			TIMER=(volatile int *)0x080a0014; 
-			MHZ=(volatile int *)&mhz; 
+			MHZ=(volatile int *)0x080a003c;
 		} else 
 		{
 			/* Abel board */
