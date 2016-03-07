@@ -1,6 +1,7 @@
 build
 gccbuil
 gccbuild
+gdbbuild
 install
 *~
 zpugccwip.tar.bz2
